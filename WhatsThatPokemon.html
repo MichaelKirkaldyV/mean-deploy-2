@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What's that Pokemon!?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="WhatsThatPokemon.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('img').click(function(){
+				$.get("https://pokeapi.co/api/v2/pokemon/1/", function(res) {	//gets the URL and does this function to the response. 
+					console.log(res);
+                    var html_str = "";							//Creates an empty string to add inside the div element.
+                    html_str += "<h1>" + res.name + "<h1>";
+                    html_str += "<h2>Types</h2>";
+                    html_str += "<ul>"; 
+                    for(var i = 0; i < res.types.length; i++) {
+                        html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    html_str += "<ul>";
+                    html_str += "<li>" + "<h2>" + "Weight:" + "</h2>" + " " + res.weight + "<li>";
+                    html_str += "<li>" + "<h2>" + "Height:" + "</h2>" + " " + res.height + "<li>";
+
+                    html_str += "</ul>";
+                    $('div').html(html_str);			//selects the div element and adds entires string variable inside using .HTML
+                }, "json");								//type of data being recieved is JSON.
+			})
+
+
+
+
+			$('img').click(function(){
+				$.get("https://pokeapi.co/api/v2/pokemon/2/", function(res) {	//gets the URL and does this function to the response. 
+					console.log(res);
+                    var html_str = "";							//Creates an empty string to add inside the div element.
+                    html_str += "<h1>" + res.name + "<h1>";
+                    html_str += "<h2>Types</h2>";
+                    html_str += "<ul>"; 
+                    for(var i = 0; i < res.types.length; i++) {
+                        html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    html_str += "<ul>";
+                    html_str += "<li>" + "<h2>" + "Weight:" + "</h2>" + " " + res.weight + "<li>";
+                    html_str += "<li>" + "<h2>" + "Height:" + "</h2>" + " " + res.height + "<li>";
+
+                    html_str += "</ul>";
+                    $('div').html(html_str);			//selects the div element and adds entires string variable inside using .HTML
+                }, "json");								//type of data being recieved is JSON.
+			})
+
+
+
+
+			$('img').click(function(){
+				$.get("https://pokeapi.co/api/v2/pokemon/3/", function(res) {	//gets the URL and does this function to the response. 
+					console.log(res);
+                    var html_str = "";							//Creates an empty string to add inside the div element.
+                    html_str += "<h1>" + res.name + "<h1>";
+                    html_str += "<h2>Types</h2>";
+                    html_str += "<ul>"; 
+                    for(var i = 0; i < res.types.length; i++) {
+                        html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    html_str += "<ul>";
+                    html_str += "<li>" + "<h2>" + "Weight:" + "</h2>" + " " + res.weight + "<li>";
+                    html_str += "<li>" + "<h2>" + "Height:" + "</h2>" + " " + res.height + "<li>";
+
+                    html_str += "</ul>";
+                    $('div').html(html_str);			//selects the div element and adds entires string variable inside using .HTML
+                }, "json");								//type of data being recieved is JSON.
+			})
+			
+
+
+
+
+
+			$('img').click(function(){
+				$.get("https://pokeapi.co/api/v2/pokemon/4/", function(res) {	//gets the URL and does this function to the response. 
+					console.log(res);
+                    var html_str = "";							//Creates an empty string to add inside the div element.
+                    html_str += "<h1>" + res.name + "<h1>";
+                    html_str += "<h2>Types</h2>";
+                    html_str += "<ul>"; 
+                    for(var i = 0; i < res.types.length; i++) {
+                        html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    html_str += "<ul>";
+                    html_str += "<li>" + "<h2>" + "Weight:" + "</h2>" + " " + res.weight + "<li>";
+                    html_str += "<li>" + "<h2>" + "Height:" + "</h2>" + " " + res.height + "<li>";
+
+                    html_str += "</ul>";
+                    $('div').html(html_str);			//selects the div element and adds entires string variable inside using .HTML
+                }, "json");								//type of data being recieved is JSON.
+			})
+
+
+
+
+			$('img').click(function(){
+				$.get("https://pokeapi.co/api/v2/pokemon/5/", function(res) {	//gets the URL and does this function to the response. 
+					console.log(res);
+                    var html_str = "";							//Creates an empty string to add inside the div element.
+                    html_str += "<h1>" + res.name + "<h1>";
+                    html_str += "<h2>Types</h2>";
+                    html_str += "<ul>"; 
+                    for(var i = 0; i < res.types.length; i++) {
+                        html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    html_str += "<ul>";
+                    html_str += "<li>" + "<h2>" + "Weight:" + "</h2>" + " " + res.weight + "<li>";
+                    html_str += "<li>" + "<h2>" + "Height:" + "</h2>" + " " + res.height + "<li>";
+
+                    html_str += "</ul>";
+                    $('div').html(html_str);			//selects the div element and adds entires string variable inside using .HTML
+                }, "json");								//type of data being recieved is JSON.
+			})
+
+
+		})
+		
+
+
+
+	</script>
+</head>
+<body>
+	<img alt-src="1" src="http://pokeapi.co/media/img/1.png">
+    <img alt-src="2" src="http://pokeapi.co/media/img/2.png">
+    <img alt-src="3" src="http://pokeapi.co/media/img/3.png">
+    <img alt-src="4" src="http://pokeapi.co/media/img/4.png">
+    <img alt-src="5" src="http://pokeapi.co/media/img/5.png">
+    <div></div>
+
+</body>
+</html>
